@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Shared Styles */
+header,
+section {
+  max-width: 1280px;
+  margin: 0px auto;
+}
+
+.section {
+  margin-top: 100px;
+}
+
+.icon,
+svg {
+  width: 19px;
+  font-weight: 600;
+}
+
+img {
+  width: 100%;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 41px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  background: rgb(224, 44, 109);
+  padding: 10px 10px;
+  border: 2px solid rgb(224, 44, 109);
+}
+
+.text {
+  color: rgb(58, 58, 58);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* Header Section */
+nav,
+ul {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  padding: 30px 0;
+  color: rgb(58, 58, 58);
+}
+
+nav {
+  justify-content: space-between;
+}
+
+ul {
+  gap: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(58, 58, 58);
+  font-weight: 600;
+}
+a:hover {
+  color: rgb(224, 44, 109);
+}
+
+li {
+  list-style: none;
+}
+
+ul > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+hr {
+  border: none;
+  height: 2px; 
+  background: linear-gradient(
+    135deg,
+    rgba(192, 204, 218, 0.1) 0%,
+    rgba(192, 204, 218, 0.6) 50.378%,
+    rgba(192, 204, 218, 0.1) 100%
+  );
+
+  margin: 0 auto;
+}
+
+/* Hero part */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  margin-top: 50px;
+}
+
+.left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left > h1 {
+  font-size: 3.2rem;
+}
+
+.right {
+  background-image: url("../images/bg.svg");
+  background-size: calc(100% - 40px) calc(100% - 40px);
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+/* Company Tang */
+.tag{
+    margin-top: 60px;
+}
+
+.tag > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.tag div img{
+    width: 91px;
+}
+
+/* Popular Collection */
+.title{
+    color: rgb(58, 58, 58);
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 50px 0;
+}
+
+.popular{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    flex-direction: column;
+}
+
+.rating > span{
+    color: rgb(251, 130, 0);
+}
+
+#rate{
+    margin-left: 5px;
+    color: rgb(94, 99, 102);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.card-info > h2{
+    color: rgb(24, 25, 31);
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.card-info > h3{
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.text2{
+    width: 70%;
+}
+
+.card{
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(255, 255, 255);
+    padding: 18px 15px;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 40px;
+}
+
+.img-con{
+    overflow: hidden;
+    width: 100%;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.img-con > img{
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.img-con > img:hover{
+    transform: scale(1.1);
+}
+
+.btn2{
+    border: none;
+    color: rgb(224, 44, 109);
+    margin-top: 10px;
+    background: none;
+    float: right;
+}
+
+/* Featured products */
+
+.featured{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    gap: 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.featured button{
+    border-radius: 0px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.featured .info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* Footer Section */
+footer{
+    background-color: rgb(10, 8, 38);
+    color: white;
+}
+
+.foot{
+    max-width: 1280px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+footer a{
+    color: white;
+    text-decoration: underline;
+}
+
+footer #social > img{
+    color: white;
+    background-color: white;
+    border-radius: 10px;
+    width: 28px;
+}
+
+#social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 15px;
+}
+
+
+
+
