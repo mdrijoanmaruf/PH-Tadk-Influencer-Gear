@@ -13,6 +13,7 @@
 
     .hero{
         flex-wrap: wrap-reverse;
+        gap: 20px;
     }
     .hero .left{
         width: 90%;
